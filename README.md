@@ -199,10 +199,9 @@ que hayan salido los últimos 2 años.
 6. Repetir query 3 y 4 pero retornando sólo el título y genre.
 
     ```js
-    db.movies.find({}, {titulo: 1, genre: 1, _id: 0})
-    .skip(5)
-    .limit(5)
-    .sort({income: -1})
+    db.movies.find({country: "USA"}, {titulo: 1, genre:1, _id:0})
+    .limit(10)
+    .sort({year: 1})
 
     db.movies.find({}, {titulo: 1, genre: 1, _id: 0})
     .limit(5)
