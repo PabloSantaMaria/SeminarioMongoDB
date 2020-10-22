@@ -133,3 +133,35 @@ TUDAI - UNICEN - 2020
         {$set: {highlighted: true}}
     )
     ```
+
+5. Actualizar películas cambiando el genre “drama” por “bored”.
+
+    ```js
+    db.movies.updateMany(
+        { genre: "Drama" },
+        { $set: { genre: "Bored"}}
+    )
+    ```
+
+6. Borrar todas las películas que tengan más de 30 años.
+
+    ```js
+    db.movies.deleteMany({year: {$lt: 1990}})
+    ```
+
+7. Buscar todas las películas argentinas.
+
+    ```js
+    db.movies.find({country: "Argentina"})
+    ```
+
+8. Buscar todas las películas de acción con un buen rating (ej. > 4.0)
+que hayan salido los últimos 2 años.
+
+    ```js
+    db.movies.find({
+        genre: "Action",
+        rating: {$gt: 4.0},
+        year: {$gt: 2018}
+    })
+    ```
