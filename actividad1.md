@@ -46,4 +46,4 @@
     db.todo.insert({desc: "call dentist", priority: 2, createdAt: new Date()})
     ```
 
-    [:top:](#actividad-1)
+    [:arrow_double_up: top](#actividad-1)

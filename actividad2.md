@@ -117,4 +117,4 @@ que hayan salido los últimos 2 años.
     })
     ```
 
-[:top:](#actividad-2)
+[:arrow_double_up: top](#actividad-2)
