@@ -21,7 +21,7 @@ TUDAI - UNICEN - 2020
 4. Crear una nueva collection.
 
     ```js
-    db.createCollection("grocery")
+    db.createCollection("grocerys")
     ```
 
 5. Insertar 5 documentos en la collection con datos básicos.
@@ -43,7 +43,7 @@ TUDAI - UNICEN - 2020
 7. Crear otras collections con documentos.
 
     ```js
-    db.createCollection("todo")
+    db.createCollection("toDos")
     db.todo.insert({desc: "go to grocery store", priority: 3, createdAt: new Date()})
     db.todo.insert({desc: "pay bills", priority: 1, createdAt: new Date()})
     db.todo.insert({desc: "call dentist", priority: 2, createdAt: new Date()})
@@ -58,7 +58,7 @@ TUDAI - UNICEN - 2020
     db.createCollection("movies")
     ```
 
-2. Para cada movie, se debería guardar información como título (String), year (Number), rating (Number, entre 1.0 y 5.0), genre (String), description (String), actors (Array<String>), country (String), income (Number), duration (Number).
+2. Para cada movie, se debería guardar información como título (String), year (Number), rating (Number, entre 1.0 y 5.0), genre (String), description (String), actors (Array\<String\>), country (String), income (Number), duration (Number).
 3. Agregar películas usando insert(), insertOne() & insertMany().
 
     ```js
