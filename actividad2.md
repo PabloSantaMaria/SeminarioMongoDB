@@ -97,7 +97,7 @@
 6. Borrar todas las películas que tengan más de 30 años.
 
     ```js
-    db.movies.deleteMany({year: {$lt: 1990}})
+    db.movies.deleteMany({year: {$lt: new Date().getFullYear() - 30}})
     ```
 
 7. Buscar todas las películas argentinas.
@@ -113,7 +113,7 @@ que hayan salido los últimos 2 años.
     db.movies.find({
         genre: "Action",
         rating: {$gt: 4.0},
-        year: {$gt: 2018}
+        year: {$gt: new Date().getFullYear() - 2}
     })
     ```
 
